@@ -12,7 +12,7 @@ $ rails server
 ```
 In the web browser go to `localhost:3000`, this takes the user to the Home page.
 
-## Part 2 s
+## Part 2
 
 Script is written in Python
 
