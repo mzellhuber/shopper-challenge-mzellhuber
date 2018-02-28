@@ -12,8 +12,9 @@ $ rails server
 ```
 In the web browser go to `localhost:3000`, this takes the user to the Home page.
 
+## Part 2 s
 
-Part 2 script is written in Python
+Script is written in Python
 
 For the usage: `./get_applicants.py "2014-07-01" "2014-09-01"`
 

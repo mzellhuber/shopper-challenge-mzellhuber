@@ -7,10 +7,13 @@ end
 
 gem 'rails', '~> 5.1.5'
 
-#pg to use heroku and trunc function
-gem 'pg','0.18.4'
+group :development, :test do
+ gem 'sqlite3',     '1.3.9'
+end
 
 group :production do
+#pg to use heroku and trunc function
+ gem 'pg','0.18.4'
  gem 'rails_12factor', '0.0.3'
 end
 
