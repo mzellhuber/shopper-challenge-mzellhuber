@@ -1,5 +1,23 @@
-<h1>New Applicant</h1>
+<%= render 'layouts/navbar'%>
+
+<div class="container margin-top">
+  <h2 class="text-center">
+    Hello, apply to be an Instacart Shopper!
+  </h2>
+  <p class="text-center">We need a few details to start your application</p>
+</div>
+
 
 <%= render 'form', applicant: @applicant %>
 
-<%= link_to 'Back', applicants_path %>
+
+<div class="container">
+  <div class="row text-center margin-bottom">
+    <p>
+      <%= link_to 'Already applied?', searchApplication_applicants_path ,class:"" %>
+    </p>
+  </div>
+</div>
+
+
+<%= link_to 'Back', home_index_path %>

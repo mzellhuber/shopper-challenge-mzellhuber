@@ -1,0 +1,14 @@
+<div class="container margin-top">
+
+  <h2 class="text-center">
+    Thank You for Applying
+  </h2>
+  <div class="form-group text-center">
+    <p>
+      We will be in contact with you as soon as possible.
+      You can view your application 
+      <%= link_to('here', applicant_path(session[:current_user]["id"]), html_options = {class:""}) %>
+    </p>
+  </div>
+
+</div>

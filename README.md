@@ -3,7 +3,7 @@ Shopper Challenge
 
 ## Usage
 
-The application was developed with Ruby 2.5.0p0 and Rails 5.1.5. The database for the development environment is sqlite3 and for production is Postgres (For usage with Heroku).  In the project directory:
+The application was developed with Ruby 2.5.0p0 and Rails 5.1.5. The database for the development environment is Postgres (For usage with Heroku).  In the project directory:
 
 ```bash
 $ bundle install

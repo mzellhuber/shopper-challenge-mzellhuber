@@ -1,0 +1,78 @@
+<!-- Main jumbotron for a primary marketing message or call to action
+-->
+<div class="container already-applied">
+  <div class="row">
+    <div class="col-md-12">
+      <%= link_to 'Already applied?', searchApplication_applicants_path ,class:"pull-right" %>
+    </div>
+  </div>
+</div>
+<div class="jumbotron cover">
+  <div class="container">
+    <div class="row main">
+      <div class="col-md-6 col-md-offset-3">
+        <%= image_tag("instaLogo.png", class: "logo") %>
+        <h2 class="text-center">Become an Instacart Shopper and getting paid to shop</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <%= link_to('Apply Today', new_applicant_path, html_options = {class:"btnApply"}) %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container main-container">
+  <div class="row video-row">
+    <div class="col-md-12 text-center">
+      <h3>How does it work?</h3>
+      <h4>Watch this short video to learn more about it</h4>
+      <iframe allow="autoplay; encrypted-media" frameborder="0" height="315" src="https://www.youtube.com/embed/Ro5yrd1Rkpc?rel=0" width="560"></iframe>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3>Sounds like something for you?</h3>
+      <h4>Learn more about our positions</h4>
+    </div>
+  </div>
+  <div class="row panels">
+    <div class="col-sm-5 col-md-4 col-md-offset-2 box">
+      <div class="panel panel-default">
+        <%= image_tag("https://images.unsplash.com/photo-1441123285228-1448e608f3d5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=02bddc01e37b428821dd036309ae1832&auto=format&fit=crop&w=1500&q=80") %>
+        <br/>
+        <div class="panel-body">
+          <h4 class="text-center">Full-Service Shopper</h4>
+          <p class="text-center">Shop and deliver orders</p>
+          <ul>
+            <li>Independent contractor</li>
+            <li>Access to a car required</li>
+            <li>Choose hours that work for you</li>
+            <li>Shop and deliver orders</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-5 col-md-4 box">
+      <div class="panel panel-default">
+        <%= image_tag("https://images.pexels.com/photos/868110/pexels-photo-868110.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb") %>
+        <br/>
+        <div class="panel-body">
+          <h4 class="text-center">In-Store Shopper</h4>
+          <p class="text-center">Shop orders within a store</p>
+          <ul>
+            <li>Part-time employee</li>
+            <li>No vehicle required</li>
+            <li>Flexible schedule</li>
+            <li>Shopping only</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12 text-center">
+      <%= link_to('Apply Today', new_applicant_path, html_options = {class:"btnApply"}) %>
+    </div>
+  </div>
+</div>

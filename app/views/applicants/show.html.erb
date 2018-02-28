@@ -1,54 +1,72 @@
+<%= render 'layouts/navbar'%>
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @applicant.first_name %>
-</p>
+<div class="container margin-top">
+  <div class="text-center">
+      <h2>Hello <%= @applicant.first_name %> <br> Here are the details of your application</h2>
+  </div>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @applicant.last_name %>
-</p>
+  <div class="form form-signin">
 
-<p>
-  <strong>Region:</strong>
-  <%= @applicant.region %>
-</p>
+    <div class="row">
 
-<p>
-  <strong>Phone:</strong>
-  <%= @applicant.phone %>
-</p>
+      <div class="panel panel-default">
 
-<p>
-  <strong>Email:</strong>
-  <%= @applicant.email %>
-</p>
+          <div class="panel-body">
 
-<p>
-  <strong>Phone type:</strong>
-  <%= @applicant.phone_type %>
-</p>
+              <p>
+                <strong>First name:</strong>
+                <%= @applicant.first_name %>
+              </p>
 
-<p>
-  <strong>Source:</strong>
-  <%= @applicant.source %>
-</p>
+              <p>
+                <strong>Last name:</strong>
+                <%= @applicant.last_name %>
+              </p>
 
-<p>
-  <strong>Over 21:</strong>
-  <%= @applicant.over_21 %>
-</p>
+              <p>
+                <strong>Region:</strong>
+                <%= @applicant.region %>
+              </p>
 
-<p>
-  <strong>Reason:</strong>
-  <%= @applicant.reason %>
-</p>
+              <p>
+                <strong>Phone:</strong>
+                <%= @applicant.phone %>
+              </p>
 
-<p>
-  <strong>Workflow state:</strong>
-  <%= @applicant.workflow_state %>
-</p>
+              <p>
+                <strong>Email:</strong>
+                <%= @applicant.email %>
+              </p>
 
-<%= link_to 'Edit', edit_applicant_path(@applicant) %> |
-<%= link_to 'Back', applicants_path %>
+              <p>
+                <strong>Phone type:</strong>
+                <%= @applicant.phone_type %>
+              </p>
+
+              <p>
+                <strong>Source:</strong>
+                <%= @applicant.source %>
+              </p>
+
+              <p>
+                <strong>Reason:</strong>
+                <%= @applicant.reason %>
+              </p>
+
+          </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+<div class="container">
+  <div class="row text-center">
+      <%= link_to 'Edit', edit_applicant_path(@applicant), :class => "btnApply" %>
+  </div>
+</div>

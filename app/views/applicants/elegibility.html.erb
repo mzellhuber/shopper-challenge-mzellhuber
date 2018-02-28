@@ -1,0 +1,33 @@
+<div class="container margin-top">
+
+  <h2 class="text-center">Shopper Elegibility</h2>
+    <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <p>
+            Shoppers are the face of the company and we take this position seriously. Instacart might perform a background check just to make sure everything is in order.
+          </p>
+          <p>
+            In order to be elegible as an Instacart Shopper you must meet certain requirements. 
+          </p>
+          <br/>
+          <p></p>
+          <div class="ul">
+            <div class="li">Be 21 or over</div>
+            <div class="li">Be able to lift between 30-40 lbs with or without an accommodation</div>
+            <div class="li">Be eligible to work in the United States</div>
+          </div>
+          <br/>
+          <p>By selecting Submit you certify that you meet all three requirements and I authorize a background check</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <%= form_tag applySuccess_applicants_path do %>
+        <div class="form-btn">
+          <%= button_tag "Submit",class: "btnApply" %>
+        </div>
+      <% end %>
+    </div>
+</div>

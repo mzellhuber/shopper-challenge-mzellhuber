@@ -1,4 +1,6 @@
-<%= form_with(model: applicant, local: true) do |form| %>
+<div class="container">
+
+  <%= form_with(model: applicant, local: true) do |form| %>
   <% if applicant.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(applicant.errors.count, "error") %> prohibited this applicant from being saved:</h2>
@@ -11,57 +13,82 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name, id: :applicant_first_name %>
+  <div class="container">
+
+    <div class="form form-signin">
+
+      <div class="row">
+
+        <div class="panel panel-default">
+
+            <div class="panel-body">
+
+              <div class="form-group">
+
+                    <div class="form-group">
+                      <%= form.label :first_name %>
+                      <%= form.text_field :first_name, id: :applicant_first_name , class:"form-control", required:"required", placeholder:"First Name"%>
+                    </div>
+
+                    <div class="form-group">
+                      <%= form.label :last_name %>
+                      <%= form.text_field :last_name, id: :applicant_last_name , class:"form-control", required:"required", placeholder:"Last Name"%>
+                    </div>
+
+                    <div class="form-group">
+                      <%= form.label :region %>
+                      <div class="form-select">
+
+                           <%= form.select :region, options_for_select(Applicant::REGION, @applicant.region),{ },class: "form-control",required:"required" %>
+                      </div>
+                      
+                    </div>
+
+                    <div class="form-group">
+                      <%= form.label :phone %>
+                      <%= form.text_field :phone, id: :applicant_phone , class:"form-control", required:"required", placeholder:"Mobile Number"%>
+                    </div>
+
+                    <div class="form-group">
+                      <%= form.label :email %>
+                      <%= form.text_field :email, id: :applicant_email, class:"form-control", placeholder: "Email", type:"email", required:"required"%>
+                    </div>
+
+                    <div class="form-group">
+                      <p>
+                        Phone type
+                      </p>
+                      <div class="form-select">
+                          <%= form.select :phone_type, options_for_select(Applicant::PHONE_TYPE, @applicant.phone_type),{ },class: "form-control",required:"required" %>
+
+                        </div>
+                      </div>
+
+                    <div class="form-group">
+                      <%= form.label :source %>
+                      <%= form.text_field :source, id: :applicant_source , class:"form-control", placeholder:"Source"%>
+                    </div>
+
+                    <div class="form-group">
+                      <%= form.label :reason %>
+                      <%= form.text_field :reason, id: :applicant_reason , class:"form-control", placeholder:"Reason"%>
+                    </div>
+
+                    
+
+              </div>
+            </div>
+        </div>
+          <div class="row text-center">
+            <%= form.button content_for(:form_button),class: "btnApply" %>
+            
+          </div>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name, id: :applicant_last_name %>
-  </div>
 
-  <div class="field">
-    <%= form.label :region %>
-    <%= form.text_field :region, id: :applicant_region %>
-  </div>
-
-  <div class="field">
-    <%= form.label :phone %>
-    <%= form.text_field :phone, id: :applicant_phone %>
-  </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email, id: :applicant_email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :phone_type %>
-    <%= form.text_field :phone_type, id: :applicant_phone_type %>
-  </div>
-
-  <div class="field">
-    <%= form.label :source %>
-    <%= form.text_field :source, id: :applicant_source %>
-  </div>
-
-  <div class="field">
-    <%= form.label :over_21 %>
-    <%= form.check_box :over_21, id: :applicant_over_21 %>
-  </div>
-
-  <div class="field">
-    <%= form.label :reason %>
-    <%= form.text_field :reason, id: :applicant_reason %>
-  </div>
-
-  <div class="field">
-    <%= form.label :workflow_state %>
-    <%= form.text_field :workflow_state, id: :applicant_workflow_state %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
 <% end %>
+
+
+</div>
