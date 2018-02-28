@@ -39,7 +39,7 @@ def sql_to_csv(sql, conn):
 
 def main():
 	#run example
-	#./get_applicants.py "2014-12-17" "2015-01-03"
+	#./get_applicants.py "2014-07-01" "2014-09-01"
 
 	
     database = "applicants.sqlite3"

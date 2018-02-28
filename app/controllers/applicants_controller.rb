@@ -64,6 +64,9 @@ class ApplicantsController < ApplicationController
   end
 
 
+  #TODO - add security so that only you can see your application - maybe make them input email and last name?
+
+
   def searchApplication
   end
 
