@@ -1,24 +1,15 @@
-# README
+Shopper Challenge
+=================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Usage
 
-Things you may want to cover:
+The application was developed with Ruby 2.5.0p0 and Rails 5.1.5. The database for the development environment is sqlite3 and for production is Postgres (For usage with Heroku).  In the project directory:
 
-* Ruby version
+```bash
+$ bundle install
+$ rails db:create db:migrate db:seed
+$ rails server
+```
+In the web browser go to `localhost:3000`, this takes the user to the Home page.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Heroku app [Heroku](https://shopper-challege-mzellhuber.herokuapp.com/).

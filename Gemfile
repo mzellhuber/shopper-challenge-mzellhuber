@@ -11,7 +11,6 @@ gem 'rails', '~> 5.1.5'
 gem 'pg','0.18.4'
 
 group :production do
- 
  gem 'rails_12factor', '0.0.3'
 end
 

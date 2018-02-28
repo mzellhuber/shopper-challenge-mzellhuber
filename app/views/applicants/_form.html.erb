@@ -1,0 +1,67 @@
+<%= form_with(model: applicant, local: true) do |form| %>
+  <% if applicant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(applicant.errors.count, "error") %> prohibited this applicant from being saved:</h2>
+
+      <ul>
+      <% applicant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :applicant_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :applicant_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :region %>
+    <%= form.text_field :region, id: :applicant_region %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, id: :applicant_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :applicant_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone_type %>
+    <%= form.text_field :phone_type, id: :applicant_phone_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :source %>
+    <%= form.text_field :source, id: :applicant_source %>
+  </div>
+
+  <div class="field">
+    <%= form.label :over_21 %>
+    <%= form.check_box :over_21, id: :applicant_over_21 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reason %>
+    <%= form.text_field :reason, id: :applicant_reason %>
+  </div>
+
+  <div class="field">
+    <%= form.label :workflow_state %>
+    <%= form.text_field :workflow_state, id: :applicant_workflow_state %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  region: MyString
+  phone: MyString
+  email: MyString
+  phone_type: MyString
+  source: MyString
+  over_21: false
+  reason: MyString
+  workflow_state: 
+
+two:
+  first_name: MyString
+  last_name: MyString
+  region: MyString
+  phone: MyString
+  email: MyString
+  phone_type: MyString
+  source: MyString
+  over_21: false
+  reason: MyString
+  workflow_state: 

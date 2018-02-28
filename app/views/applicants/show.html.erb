@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @applicant.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @applicant.last_name %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @applicant.region %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @applicant.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @applicant.email %>
+</p>
+
+<p>
+  <strong>Phone type:</strong>
+  <%= @applicant.phone_type %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @applicant.source %>
+</p>
+
+<p>
+  <strong>Over 21:</strong>
+  <%= @applicant.over_21 %>
+</p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @applicant.reason %>
+</p>
+
+<p>
+  <strong>Workflow state:</strong>
+  <%= @applicant.workflow_state %>
+</p>
+
+<%= link_to 'Edit', edit_applicant_path(@applicant) %> |
+<%= link_to 'Back', applicants_path %>
