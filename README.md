@@ -7,7 +7,7 @@ The application was developed with Ruby 2.5.0p0 and Rails 5.1.5. The database fo
 
 ```bash
 $ bundle install
-$ rails db:create db:migrate db:seed
+$ rails db:create db:migrate
 $ rails server
 ```
 In the web browser go to `localhost:3000`, this takes the user to the Home page.
